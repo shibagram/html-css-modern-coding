@@ -1,0 +1,158 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    // background: url('/images/bg.png');
+    // background-size: cover;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Raleway, Meiryo;
+}
+
+.header {
+    padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+
+.site-title {
+    margin: 50px 0 40px;
+    font-size: 7.6rem;
+}
+
+.btn-container .btn {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    border: 1px solid;
+    margin: 40px 30px 0;
+    border-radius: 30px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    
+    &:first-child {
+        background-color: yellow;
+    }
+
+    &:last-child {
+        background-color: green;
+    }
+
+}
+
+.about, .skills {
+    padding: 80px 30px;
+    background-color: #fff;
+    color: #333;
+
+    & p {
+        margin: 20px 0;
+    }
+}
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.works {
+    padding: 80px 30px;
+    background-color: black;
+    color: white;
+}
+
+.works-title, .skills-title {
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    & .content {
+        aspect-ratio: 16 / 9;
+        width: 24%;
+        height: auto;
+        color: black;
+
+        &.building {
+            background: url(./images/building.jpg) no-repeat;
+            background-size: contain;
+            padding-top: 20px;
+        }
+
+        &.tree {
+            background: url(./images/tree.jpg) no-repeat;
+            background-size: contain;
+            padding-top: 20px;
+        }
+
+    }
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    & .skill {
+        padding: 30px;
+        aspect-ratio: 1 / 1;
+        width: 25%;
+        height: auto;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    & .picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: aqua;
+        background: url("./images/sky.jpg") no-repeat ;
+        margin: 0 auto 10px;
+    }
+
+    
+
+}
+
+@media (max-width: 768px) {
+
+    .works-container{
+        display: block;
+    }
+
+    .works-container .content {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .skills-container{
+        display: block;
+    }
+
+    .skills-container .skill {
+        padding-top: 40px;
+        width: 70%;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+    
+    
+}
